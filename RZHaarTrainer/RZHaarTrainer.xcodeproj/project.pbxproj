@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBD38E191B45BD4F001E7512 /* mergevec in Resources */ = {isa = PBXBuildFile; fileRef = CBD38E161B45BD4F001E7512 /* mergevec */; };
+		CBD38E1A1B45BD4F001E7512 /* opencv_createsamples in Resources */ = {isa = PBXBuildFile; fileRef = CBD38E171B45BD4F001E7512 /* opencv_createsamples */; };
+		CBD38E1B1B45BD4F001E7512 /* opencv_traincascade in Resources */ = {isa = PBXBuildFile; fileRef = CBD38E181B45BD4F001E7512 /* opencv_traincascade */; };
+		CBD38E1E1B45BD69001E7512 /* HaarTrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD38E1C1B45BD69001E7512 /* HaarTrainer.swift */; };
+		CBD38E1F1B45BD69001E7512 /* PositiveSampleCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD38E1D1B45BD69001E7512 /* PositiveSampleCreator.swift */; };
+		CBD38E211B45BD82001E7512 /* SystemUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD38E201B45BD82001E7512 /* SystemUtilities.swift */; };
+		CBD38E291B45BD96001E7512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD38E221B45BD96001E7512 /* AppDelegate.swift */; };
+		CBD38E2B1B45BD96001E7512 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD38E261B45BD96001E7512 /* Images.xcassets */; };
+		CBD38E2C1B45BD96001E7512 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD38E271B45BD96001E7512 /* Info.plist */; };
+		CBD38E2D1B45BD96001E7512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD38E281B45BD96001E7512 /* ViewController.swift */; };
+		CBD38E301B45BDB5001E7512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD38E2E1B45BDB5001E7512 /* Main.storyboard */; };
+		CBD38E331B45C09B001E7512 /* mergevec in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBD38E161B45BD4F001E7512 /* mergevec */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CBD38E341B45C09E001E7512 /* opencv_createsamples in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBD38E171B45BD4F001E7512 /* opencv_createsamples */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CBD38E351B45C0A1001E7512 /* opencv_traincascade in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBD38E181B45BD4F001E7512 /* opencv_traincascade */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CBFAF08E1B42039E00A1D280 /* RZHaarTrainTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFAF08D1B42039E00A1D280 /* RZHaarTrainTwoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBFAF0881B42039E00A1D280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFAF06D1B42039E00A1D280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBFAF0741B42039E00A1D280;
+			remoteInfo = RZHaarTrainTwo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBFAF0A61B4203FD00A1D280 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				CBD38E331B45C09B001E7512 /* mergevec in CopyFiles */,
+				CBD38E341B45C09E001E7512 /* opencv_createsamples in CopyFiles */,
+				CBD38E351B45C0A1001E7512 /* opencv_traincascade in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CBD38E161B45BD4F001E7512 /* mergevec */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = mergevec; path = RZHaarTrainer/scripts/mergevec; sourceTree = SOURCE_ROOT; };
+		CBD38E171B45BD4F001E7512 /* opencv_createsamples */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = opencv_createsamples; path = RZHaarTrainer/scripts/opencv_createsamples; sourceTree = SOURCE_ROOT; };
+		CBD38E181B45BD4F001E7512 /* opencv_traincascade */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = opencv_traincascade; path = RZHaarTrainer/scripts/opencv_traincascade; sourceTree = SOURCE_ROOT; };
+		CBD38E1C1B45BD69001E7512 /* HaarTrainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HaarTrainer.swift; path = RZHaarTrainer/HaarTrainer.swift; sourceTree = SOURCE_ROOT; };
+		CBD38E1D1B45BD69001E7512 /* PositiveSampleCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositiveSampleCreator.swift; path = RZHaarTrainer/PositiveSampleCreator.swift; sourceTree = SOURCE_ROOT; };
+		CBD38E201B45BD82001E7512 /* SystemUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemUtilities.swift; path = RZHaarTrainer/SystemUtilities.swift; sourceTree = SOURCE_ROOT; };
+		CBD38E221B45BD96001E7512 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RZHaarTrainer/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		CBD38E261B45BD96001E7512 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RZHaarTrainer/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		CBD38E271B45BD96001E7512 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RZHaarTrainer/Info.plist; sourceTree = SOURCE_ROOT; };
+		CBD38E281B45BD96001E7512 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = RZHaarTrainer/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		CBD38E2F1B45BDB5001E7512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RZHaarTrainer/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CBFAF0751B42039E00A1D280 /* RZHaarTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RZHaarTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFAF0871B42039E00A1D280 /* RZHaarTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZHaarTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFAF08C1B42039E00A1D280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBFAF08D1B42039E00A1D280 /* RZHaarTrainTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZHaarTrainTwoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBFAF0721B42039E00A1D280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFAF0841B42039E00A1D280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB48105B1B44696C005EC84E /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				CBD38E161B45BD4F001E7512 /* mergevec */,
+				CBD38E171B45BD4F001E7512 /* opencv_createsamples */,
+				CBD38E181B45BD4F001E7512 /* opencv_traincascade */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		CBD38E311B45BE15001E7512 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CBD38E201B45BD82001E7512 /* SystemUtilities.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		CBD38E321B45BE1C001E7512 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBD38E261B45BD96001E7512 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CBFAF06C1B42039E00A1D280 = {
+			isa = PBXGroup;
+			children = (
+				CBFAF0771B42039E00A1D280 /* RZHaarTrainTwo */,
+				CBFAF08A1B42039E00A1D280 /* RZHaarTrainTwoTests */,
+				CBFAF0761B42039E00A1D280 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBFAF0761B42039E00A1D280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAF0751B42039E00A1D280 /* RZHaarTrainer.app */,
+				CBFAF0871B42039E00A1D280 /* RZHaarTrainerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBFAF0771B42039E00A1D280 /* RZHaarTrainTwo */ = {
+			isa = PBXGroup;
+			children = (
+				CBD38E221B45BD96001E7512 /* AppDelegate.swift */,
+				CBD38E281B45BD96001E7512 /* ViewController.swift */,
+				CBD38E2E1B45BDB5001E7512 /* Main.storyboard */,
+				CBD38E311B45BE15001E7512 /* Utilities */,
+				CBFAF09F1B4203EE00A1D280 /* OpenCV */,
+				CBD38E321B45BE1C001E7512 /* Resources */,
+				CBFAF0781B42039E00A1D280 /* Supporting Files */,
+			);
+			path = RZHaarTrainTwo;
+			sourceTree = "<group>";
+		};
+		CBFAF0781B42039E00A1D280 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBD38E271B45BD96001E7512 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBFAF08A1B42039E00A1D280 /* RZHaarTrainTwoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAF08D1B42039E00A1D280 /* RZHaarTrainTwoTests.swift */,
+				CBFAF08B1B42039E00A1D280 /* Supporting Files */,
+			);
+			path = RZHaarTrainTwoTests;
+			sourceTree = "<group>";
+		};
+		CBFAF08B1B42039E00A1D280 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBFAF08C1B42039E00A1D280 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBFAF09F1B4203EE00A1D280 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				CBD38E1C1B45BD69001E7512 /* HaarTrainer.swift */,
+				CBD38E1D1B45BD69001E7512 /* PositiveSampleCreator.swift */,
+				CB48105B1B44696C005EC84E /* scripts */,
+			);
+			name = OpenCV;
+			path = ../../RZHaarTrain/RZHaarTrain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBFAF0741B42039E00A1D280 /* RZHaarTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFAF0911B42039E00A1D280 /* Build configuration list for PBXNativeTarget "RZHaarTrainer" */;
+			buildPhases = (
+				CBFAF0711B42039E00A1D280 /* Sources */,
+				CBFAF0721B42039E00A1D280 /* Frameworks */,
+				CBFAF0731B42039E00A1D280 /* Resources */,
+				CBFAF0A61B4203FD00A1D280 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZHaarTrainer;
+			productName = RZHaarTrainTwo;
+			productReference = CBFAF0751B42039E00A1D280 /* RZHaarTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBFAF0861B42039E00A1D280 /* RZHaarTrainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFAF0941B42039E00A1D280 /* Build configuration list for PBXNativeTarget "RZHaarTrainerTests" */;
+			buildPhases = (
+				CBFAF0831B42039E00A1D280 /* Sources */,
+				CBFAF0841B42039E00A1D280 /* Frameworks */,
+				CBFAF0851B42039E00A1D280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBFAF0891B42039E00A1D280 /* PBXTargetDependency */,
+			);
+			name = RZHaarTrainerTests;
+			productName = RZHaarTrainTwoTests;
+			productReference = CBFAF0871B42039E00A1D280 /* RZHaarTrainerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBFAF06D1B42039E00A1D280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Raizlabs;
+				TargetAttributes = {
+					CBFAF0741B42039E00A1D280 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					CBFAF0861B42039E00A1D280 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = CBFAF0741B42039E00A1D280;
+					};
+				};
+			};
+			buildConfigurationList = CBFAF0701B42039E00A1D280 /* Build configuration list for PBXProject "RZHaarTrainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBFAF06C1B42039E00A1D280;
+			productRefGroup = CBFAF0761B42039E00A1D280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBFAF0741B42039E00A1D280 /* RZHaarTrainer */,
+				CBFAF0861B42039E00A1D280 /* RZHaarTrainerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBFAF0731B42039E00A1D280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD38E2C1B45BD96001E7512 /* Info.plist in Resources */,
+				CBD38E1A1B45BD4F001E7512 /* opencv_createsamples in Resources */,
+				CBD38E2B1B45BD96001E7512 /* Images.xcassets in Resources */,
+				CBD38E301B45BDB5001E7512 /* Main.storyboard in Resources */,
+				CBD38E191B45BD4F001E7512 /* mergevec in Resources */,
+				CBD38E1B1B45BD4F001E7512 /* opencv_traincascade in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFAF0851B42039E00A1D280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBFAF0711B42039E00A1D280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD38E291B45BD96001E7512 /* AppDelegate.swift in Sources */,
+				CBD38E1F1B45BD69001E7512 /* PositiveSampleCreator.swift in Sources */,
+				CBD38E1E1B45BD69001E7512 /* HaarTrainer.swift in Sources */,
+				CBD38E2D1B45BD96001E7512 /* ViewController.swift in Sources */,
+				CBD38E211B45BD82001E7512 /* SystemUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFAF0831B42039E00A1D280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFAF08E1B42039E00A1D280 /* RZHaarTrainTwoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBFAF0891B42039E00A1D280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBFAF0741B42039E00A1D280 /* RZHaarTrainer */;
+			targetProxy = CBFAF0881B42039E00A1D280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBD38E2E1B45BDB5001E7512 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBD38E2F1B45BDB5001E7512 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBFAF08F1B42039E00A1D280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBFAF0901B42039E00A1D280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CBFAF0921B42039E00A1D280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RZHaarTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = RZHaarTrainer;
+			};
+			name = Debug;
+		};
+		CBFAF0931B42039E00A1D280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RZHaarTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = RZHaarTrainer;
+			};
+			name = Release;
+		};
+		CBFAF0951B42039E00A1D280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RZHaarTrainTwoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = RZHaarTrainerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZHaarTrainTwo.app/Contents/MacOS/RZHaarTrainTwo";
+			};
+			name = Debug;
+		};
+		CBFAF0961B42039E00A1D280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RZHaarTrainTwoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = RZHaarTrainerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RZHaarTrainTwo.app/Contents/MacOS/RZHaarTrainTwo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBFAF0701B42039E00A1D280 /* Build configuration list for PBXProject "RZHaarTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFAF08F1B42039E00A1D280 /* Debug */,
+				CBFAF0901B42039E00A1D280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFAF0911B42039E00A1D280 /* Build configuration list for PBXNativeTarget "RZHaarTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFAF0921B42039E00A1D280 /* Debug */,
+				CBFAF0931B42039E00A1D280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFAF0941B42039E00A1D280 /* Build configuration list for PBXNativeTarget "RZHaarTrainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFAF0951B42039E00A1D280 /* Debug */,
+				CBFAF0961B42039E00A1D280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBFAF06D1B42039E00A1D280 /* Project object */;
+}
