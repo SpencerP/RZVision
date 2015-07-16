@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HaarDetector/HaarDetector.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RZHaarTrainer/RZHaarTrainer.xcodeproj">
    </FileRef>
 </Workspace>

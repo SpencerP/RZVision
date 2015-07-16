@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB8519861B5483870046CD0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8519851B5483870046CD0C /* main.m */; };
+		CB8519891B5483870046CD0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8519881B5483870046CD0C /* AppDelegate.m */; };
+		CB85198C1B5483870046CD0C /* HaarDetector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB85198A1B5483870046CD0C /* HaarDetector.xcdatamodeld */; };
+		CB85198F1B5483870046CD0C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB85198E1B5483870046CD0C /* ViewController.mm */; };
+		CB8519921B5483870046CD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8519901B5483870046CD0C /* Main.storyboard */; };
+		CB8519941B5483870046CD0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8519931B5483870046CD0C /* Images.xcassets */; };
+		CB8519971B5483870046CD0C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB8519951B5483870046CD0C /* LaunchScreen.xib */; };
+		CB8519A31B5483870046CD0C /* HaarDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8519A21B5483870046CD0C /* HaarDetectorTests.m */; };
+		CB8519AD1B5483A70046CD0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519AC1B5483A70046CD0C /* Foundation.framework */; };
+		CB8519AF1B5483EF0046CD0C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519AE1B5483EF0046CD0C /* opencv2.framework */; };
+		CB8519B31B5485000046CD0C /* ObjectDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB8519B21B5485000046CD0C /* ObjectDetector.mm */; };
+		CB8519BC1B58666B0046CD0C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519BB1B58666B0046CD0C /* libc++.dylib */; };
+		CB8519BE1B5866A20046CD0C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519BD1B5866A20046CD0C /* AVFoundation.framework */; };
+		CB8519C01B5866C00046CD0C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519BF1B5866C00046CD0C /* CoreMedia.framework */; };
+		CB8519C21B5866D00046CD0C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519C11B5866D00046CD0C /* AssetsLibrary.framework */; };
+		CB8519C61B5873810046CD0C /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB8519C51B5873810046CD0C /* haarcascade_frontalface_default.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB85199D1B5483870046CD0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8519781B5483870046CD0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB85197F1B5483870046CD0C;
+			remoteInfo = HaarDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB8519801B5483870046CD0C /* HaarDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaarDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8519841B5483870046CD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8519851B5483870046CD0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB8519871B5483870046CD0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB8519881B5483870046CD0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB85198B1B5483870046CD0C /* HaarDetector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HaarDetector.xcdatamodel; sourceTree = "<group>"; };
+		CB85198D1B5483870046CD0C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB85198E1B5483870046CD0C /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		CB8519911B5483870046CD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB8519931B5483870046CD0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB8519961B5483870046CD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CB85199C1B5483870046CD0C /* HaarDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaarDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8519A11B5483870046CD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB8519A21B5483870046CD0C /* HaarDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaarDetectorTests.m; sourceTree = "<group>"; };
+		CB8519AC1B5483A70046CD0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB8519AE1B5483EF0046CD0C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Vision/OpenCV/iOS_framework_2.4.11/opencv2.framework; sourceTree = "<group>"; };
+		CB8519B11B5485000046CD0C /* ObjectDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectDetector.h; sourceTree = "<group>"; };
+		CB8519B21B5485000046CD0C /* ObjectDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjectDetector.mm; sourceTree = "<group>"; };
+		CB8519B41B54852C0046CD0C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CB8519B51B5865F30046CD0C /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		CB8519BB1B58666B0046CD0C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		CB8519BD1B5866A20046CD0C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CB8519BF1B5866C00046CD0C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CB8519C11B5866D00046CD0C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CB8519C51B5873810046CD0C /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB85197D1B5483870046CD0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8519C21B5866D00046CD0C /* AssetsLibrary.framework in Frameworks */,
+				CB8519C01B5866C00046CD0C /* CoreMedia.framework in Frameworks */,
+				CB8519BE1B5866A20046CD0C /* AVFoundation.framework in Frameworks */,
+				CB8519BC1B58666B0046CD0C /* libc++.dylib in Frameworks */,
+				CB8519AF1B5483EF0046CD0C /* opencv2.framework in Frameworks */,
+				CB8519AD1B5483A70046CD0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8519991B5483870046CD0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB8519771B5483870046CD0C = {
+			isa = PBXGroup;
+			children = (
+				CB8519821B5483870046CD0C /* HaarDetector */,
+				CB85199F1B5483870046CD0C /* HaarDetectorTests */,
+				CB8519811B5483870046CD0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB8519811B5483870046CD0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB8519801B5483870046CD0C /* HaarDetector.app */,
+				CB85199C1B5483870046CD0C /* HaarDetectorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB8519821B5483870046CD0C /* HaarDetector */ = {
+			isa = PBXGroup;
+			children = (
+				CB8519871B5483870046CD0C /* AppDelegate.h */,
+				CB8519881B5483870046CD0C /* AppDelegate.m */,
+				CB8519B11B5485000046CD0C /* ObjectDetector.h */,
+				CB8519B21B5485000046CD0C /* ObjectDetector.mm */,
+				CB8519901B5483870046CD0C /* Main.storyboard */,
+				CB8519931B5483870046CD0C /* Images.xcassets */,
+				CB8519951B5483870046CD0C /* LaunchScreen.xib */,
+				CB8519C41B5869250046CD0C /* Data */,
+				CB8519C31B5869120046CD0C /* View Controllers */,
+				CB8519831B5483870046CD0C /* Supporting Files */,
+				CB8519B01B5484330046CD0C /* Frameworks */,
+			);
+			path = HaarDetector;
+			sourceTree = "<group>";
+		};
+		CB8519831B5483870046CD0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB8519841B5483870046CD0C /* Info.plist */,
+				CB8519851B5483870046CD0C /* main.m */,
+				CB8519B41B54852C0046CD0C /* PrefixHeader.pch */,
+				CB8519C51B5873810046CD0C /* haarcascade_frontalface_default.xml */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB85199F1B5483870046CD0C /* HaarDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8519A21B5483870046CD0C /* HaarDetectorTests.m */,
+				CB8519A01B5483870046CD0C /* Supporting Files */,
+			);
+			path = HaarDetectorTests;
+			sourceTree = "<group>";
+		};
+		CB8519A01B5483870046CD0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB8519A11B5483870046CD0C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB8519B01B5484330046CD0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB8519AE1B5483EF0046CD0C /* opencv2.framework */,
+				CB8519AC1B5483A70046CD0C /* Foundation.framework */,
+				CB8519C11B5866D00046CD0C /* AssetsLibrary.framework */,
+				CB8519BF1B5866C00046CD0C /* CoreMedia.framework */,
+				CB8519BD1B5866A20046CD0C /* AVFoundation.framework */,
+				CB8519BB1B58666B0046CD0C /* libc++.dylib */,
+				CB8519B51B5865F30046CD0C /* libstdc++.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8519C31B5869120046CD0C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB85198D1B5483870046CD0C /* ViewController.h */,
+				CB85198E1B5483870046CD0C /* ViewController.mm */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CB8519C41B5869250046CD0C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB85198A1B5483870046CD0C /* HaarDetector.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB85197F1B5483870046CD0C /* HaarDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8519A61B5483870046CD0C /* Build configuration list for PBXNativeTarget "HaarDetector" */;
+			buildPhases = (
+				CB85197C1B5483870046CD0C /* Sources */,
+				CB85197D1B5483870046CD0C /* Frameworks */,
+				CB85197E1B5483870046CD0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaarDetector;
+			productName = HaarDetector;
+			productReference = CB8519801B5483870046CD0C /* HaarDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB85199B1B5483870046CD0C /* HaarDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8519A91B5483870046CD0C /* Build configuration list for PBXNativeTarget "HaarDetectorTests" */;
+			buildPhases = (
+				CB8519981B5483870046CD0C /* Sources */,
+				CB8519991B5483870046CD0C /* Frameworks */,
+				CB85199A1B5483870046CD0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB85199E1B5483870046CD0C /* PBXTargetDependency */,
+			);
+			name = HaarDetectorTests;
+			productName = HaarDetectorTests;
+			productReference = CB85199C1B5483870046CD0C /* HaarDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB8519781B5483870046CD0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Raizlabs;
+				TargetAttributes = {
+					CB85197F1B5483870046CD0C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CB85199B1B5483870046CD0C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CB85197F1B5483870046CD0C;
+					};
+				};
+			};
+			buildConfigurationList = CB85197B1B5483870046CD0C /* Build configuration list for PBXProject "HaarDetector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB8519771B5483870046CD0C;
+			productRefGroup = CB8519811B5483870046CD0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB85197F1B5483870046CD0C /* HaarDetector */,
+				CB85199B1B5483870046CD0C /* HaarDetectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB85197E1B5483870046CD0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8519921B5483870046CD0C /* Main.storyboard in Resources */,
+				CB8519971B5483870046CD0C /* LaunchScreen.xib in Resources */,
+				CB8519C61B5873810046CD0C /* haarcascade_frontalface_default.xml in Resources */,
+				CB8519941B5483870046CD0C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB85199A1B5483870046CD0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB85197C1B5483870046CD0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB85198C1B5483870046CD0C /* HaarDetector.xcdatamodeld in Sources */,
+				CB8519891B5483870046CD0C /* AppDelegate.m in Sources */,
+				CB8519B31B5485000046CD0C /* ObjectDetector.mm in Sources */,
+				CB85198F1B5483870046CD0C /* ViewController.mm in Sources */,
+				CB8519861B5483870046CD0C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8519981B5483870046CD0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8519A31B5483870046CD0C /* HaarDetectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB85199E1B5483870046CD0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB85197F1B5483870046CD0C /* HaarDetector */;
+			targetProxy = CB85199D1B5483870046CD0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB8519901B5483870046CD0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB8519911B5483870046CD0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB8519951B5483870046CD0C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB8519961B5483870046CD0C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB8519A41B5483870046CD0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB8519A51B5483870046CD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB8519A71B5483870046CD0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/spencerpoff/RaizLabs/Vision/OpenCV/iOS_framework_2.4.11,
+				);
+				GCC_PREFIX_HEADER = HaarDetector/PrefixHeader.pch;
+				INFOPLIST_FILE = HaarDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB8519A81B5483870046CD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/spencerpoff/RaizLabs/Vision/OpenCV/iOS_framework_2.4.11,
+				);
+				GCC_PREFIX_HEADER = HaarDetector/PrefixHeader.pch;
+				INFOPLIST_FILE = HaarDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB8519AA1B5483870046CD0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HaarDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaarDetector.app/HaarDetector";
+			};
+			name = Debug;
+		};
+		CB8519AB1B5483870046CD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HaarDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaarDetector.app/HaarDetector";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB85197B1B5483870046CD0C /* Build configuration list for PBXProject "HaarDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8519A41B5483870046CD0C /* Debug */,
+				CB8519A51B5483870046CD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB8519A61B5483870046CD0C /* Build configuration list for PBXNativeTarget "HaarDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8519A71B5483870046CD0C /* Debug */,
+				CB8519A81B5483870046CD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB8519A91B5483870046CD0C /* Build configuration list for PBXNativeTarget "HaarDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8519AA1B5483870046CD0C /* Debug */,
+				CB8519AB1B5483870046CD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB85198A1B5483870046CD0C /* HaarDetector.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB85198B1B5483870046CD0C /* HaarDetector.xcdatamodel */,
+			);
+			currentVersion = CB85198B1B5483870046CD0C /* HaarDetector.xcdatamodel */;
+			path = HaarDetector.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB8519781B5483870046CD0C /* Project object */;
+}

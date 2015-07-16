@@ -24,12 +24,6 @@ class ViewController: NSViewController, PositiveSampleCreatorProtocol, HaarTrain
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "HaarTrainer"
-        
-        // FOR DEBUG
-        self.positiveImagesDirectoryTextField.stringValue = "/Users/spencerpoff/RaizLabs/TestProjects/classifier_training/positive"
-        self.negativeImagesDirectoryTextField.stringValue = "/Users/spencerpoff/RaizLabs/TestProjects/classifier_training/negative"
-        self.outputDirectoryTextField.stringValue = "/Users/spencerpoff/RaizLabs/TestProjects/classifier_training/classifier"
     }
 
     override var representedObject: AnyObject? {
