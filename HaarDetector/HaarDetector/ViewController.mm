@@ -9,14 +9,16 @@
 #import "ViewController.h"
 
 #import "ObjectDetector.h"
+#import "EdgeDetector.h"
 
 #import <opencv2/highgui/cap_ios.h>
 
-@interface ViewController () <CvVideoCameraDelegate>
+@interface ViewController () <CvVideoCameraDelegate> {
+    ObjectDetector *objDetector;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *videoView;
 @property (strong, nonatomic) CvVideoCamera *camera;
-@property (strong, nonatomic) ObjectDetector *detector;
 
 @end
 
@@ -31,7 +33,7 @@
     self.camera.defaultFPS = 30;
     self.camera.delegate = self;
     
-    self.detector = [[ObjectDetector alloc] init];
+    objDetector = [[ObjectDetector alloc] init];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -55,8 +57,8 @@
 
 - (void)processImage:(cv::Mat &)image
 {
-    cv::Mat markedImage = [self.detector detectAndMark:image];
-    // TODO: Display on the camera
+//    [objDetector detectAndMark:image];
+    [EdgeDetector detectAndOverlay:image withThreshold:25];
 }
 
 @end

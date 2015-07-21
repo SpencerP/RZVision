@@ -10,6 +10,6 @@
 
 @interface ObjectDetector : NSObject
 
-- (cv::Mat &)detectAndMark:(cv::Mat &)rawImage;
+- (void)detectAndMark:(cv::Mat &)rawImage;
 
 @end

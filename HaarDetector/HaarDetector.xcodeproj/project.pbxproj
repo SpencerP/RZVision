@@ -23,6 +23,7 @@
 		CB8519C01B5866C00046CD0C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519BF1B5866C00046CD0C /* CoreMedia.framework */; };
 		CB8519C21B5866D00046CD0C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8519C11B5866D00046CD0C /* AssetsLibrary.framework */; };
 		CB8519C61B5873810046CD0C /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB8519C51B5873810046CD0C /* haarcascade_frontalface_default.xml */; };
+		CB9973F41B5EF830003F75B7 /* EdgeDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB9973F31B5EF830003F75B7 /* EdgeDetector.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		CB8519BF1B5866C00046CD0C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		CB8519C11B5866D00046CD0C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		CB8519C51B5873810046CD0C /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		CB9973F21B5EF830003F75B7 /* EdgeDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeDetector.h; sourceTree = "<group>"; };
+		CB9973F31B5EF830003F75B7 /* EdgeDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EdgeDetector.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				CB8519881B5483870046CD0C /* AppDelegate.m */,
 				CB8519B11B5485000046CD0C /* ObjectDetector.h */,
 				CB8519B21B5485000046CD0C /* ObjectDetector.mm */,
+				CB9973F21B5EF830003F75B7 /* EdgeDetector.h */,
+				CB9973F31B5EF830003F75B7 /* EdgeDetector.mm */,
 				CB8519901B5483870046CD0C /* Main.storyboard */,
 				CB8519931B5483870046CD0C /* Images.xcassets */,
 				CB8519951B5483870046CD0C /* LaunchScreen.xib */,
@@ -287,6 +292,7 @@
 				CB8519891B5483870046CD0C /* AppDelegate.m in Sources */,
 				CB8519B31B5485000046CD0C /* ObjectDetector.mm in Sources */,
 				CB85198F1B5483870046CD0C /* ViewController.mm in Sources */,
+				CB9973F41B5EF830003F75B7 /* EdgeDetector.mm in Sources */,
 				CB8519861B5483870046CD0C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +502,7 @@
 				CB8519A81B5483870046CD0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB8519A91B5483870046CD0C /* Build configuration list for PBXNativeTarget "HaarDetectorTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				CB8519AB1B5483870046CD0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
